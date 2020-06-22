@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Ticket {
+
+    static var all = [Ticket]()
+    
+    var prefix = "IOT"
+    var guid = "0"
+}

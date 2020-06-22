@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C609C93524A01AC6004E80B4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609C93424A01AC6004E80B4 /* main.swift */; };
+		C609C93C24A01AEB004E80B4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609C93B24A01AEB004E80B4 /* Task.swift */; };
+		C609C93E24A01B14004E80B4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609C93D24A01B14004E80B4 /* Person.swift */; };
+		C609C94024A01B71004E80B4 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609C93F24A01B71004E80B4 /* Ticket.swift */; };
+		C609C94224A01BD1004E80B4 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609C94124A01BD1004E80B4 /* Document.swift */; };
+		C609C94424A01DD7004E80B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609C94324A01DD7004E80B4 /* Extensions.swift */; };
+		C6D60BDD24A01EE100FC76CF /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C6D60BDC24A01EE100FC76CF /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,11 @@
 /* Begin PBXFileReference section */
 		C609C93124A01AC6004E80B4 /* todo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = todo; sourceTree = BUILT_PRODUCTS_DIR; };
 		C609C93424A01AC6004E80B4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C609C93B24A01AEB004E80B4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C609C93D24A01B14004E80B4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C609C93F24A01B71004E80B4 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		C609C94124A01BD1004E80B4 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		C609C94324A01DD7004E80B4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D60BDD24A01EE100FC76CF /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				C609C93424A01AC6004E80B4 /* main.swift */,
+				C609C93B24A01AEB004E80B4 /* Task.swift */,
+				C609C93D24A01B14004E80B4 /* Person.swift */,
+				C609C93F24A01B71004E80B4 /* Ticket.swift */,
+				C609C94124A01BD1004E80B4 /* Document.swift */,
+				C609C94324A01DD7004E80B4 /* Extensions.swift */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -78,6 +95,9 @@
 			dependencies = (
 			);
 			name = todo;
+			packageProductDependencies = (
+				C6D60BDC24A01EE100FC76CF /* ArgumentParser */,
+			);
 			productName = todo;
 			productReference = C609C93124A01AC6004E80B4 /* todo */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +126,9 @@
 				Base,
 			);
 			mainGroup = C609C92824A01AC6004E80B4;
+			packageReferences = (
+				C6D60BDB24A01EE100FC76CF /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = C609C93224A01AC6004E80B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C609C93E24A01B14004E80B4 /* Person.swift in Sources */,
+				C609C94424A01DD7004E80B4 /* Extensions.swift in Sources */,
+				C609C93C24A01AEB004E80B4 /* Task.swift in Sources */,
 				C609C93524A01AC6004E80B4 /* main.swift in Sources */,
+				C609C94024A01B71004E80B4 /* Ticket.swift in Sources */,
+				C609C94224A01BD1004E80B4 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +312,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6D60BDB24A01EE100FC76CF /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6D60BDC24A01EE100FC76CF /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6D60BDB24A01EE100FC76CF /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C609C92924A01AC6004E80B4 /* Project object */;
 }
